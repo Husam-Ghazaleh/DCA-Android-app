@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/Home_Btn"
+        android:background="@drawable/home"
+        android:layout_alignTop="@+id/Query_btn"
+        android:layout_alignParentStart="true"
+        android:onClick="goto_Home" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/Activities_Btn"
+        android:background="@drawable/addevent"
+        android:layout_alignTop="@+id/Home_Btn"
+        android:layout_toEndOf="@+id/Home_Btn"
+        android:layout_marginStart="45dp"
+        android:onClick="goto_AddEvent" />
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/Query_btn"
+        android:background="@drawable/stats"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/Suggestion_btn"
+        android:layout_marginEnd="39dp"
+        android:onClick="goto_Query" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/Suggestion_btn"
+        android:background="@drawable/suggestion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="goto_Suggestion" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/horizontalline"
+        android:layout_above="@+id/Home_Btn"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

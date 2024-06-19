@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/logevent_width"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_green_light"
+    android:paddingBottom="5dp"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="56dp"
+    android:id="@+id/Medication_Container">
+
+    <TextView
+        android:id="@+id/TextView_Medication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_medication"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/EditText_MedicationDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
+        android:layout_alignBaseline="@+id/TextView_Medication"
+        android:layout_toRightOf="@+id/TextView_Medication"
+        android:inputType= "textAutoCorrect"/>
+    <TextView
+        android:id="@+id/TextView_MedicationAmmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter_ammount"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView_Medication"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/EditText_MedicationAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/ammount"
+        android:layout_alignBaseline="@+id/TextView_MedicationAmmount"
+        android:layout_toRightOf="@+id/TextView_MedicationAmmount"
+        android:inputType= "numberDecimal"/>
+    <TextView
+        android:id="@+id/TextView_MedicationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView_MedicationAmmount"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/EditText_MedicationDayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/enter_day"
+        android:layout_alignBaseline="@+id/TextView_MedicationTime"
+        android:layout_toRightOf="@+id/TextView_MedicationTime"
+        android:layout_marginRight="10dp"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/EditText_MedicationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/enter_time"
+        android:layout_alignBaseline="@+id/EditText_MedicationDayTime"
+        android:layout_toRightOf="@+id/EditText_MedicationDayTime"
+        android:focusable="false" />
+
+
+
+
+</RelativeLayout>

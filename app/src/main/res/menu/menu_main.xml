@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddEvent">
+
+    <item
+        android:id="@+id/Save_item"
+        android:orderInCategory="100"
+        android:title="Save"
+        android:icon="@drawable/save"
+        android:showAsAction="always"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/SignOut"
+        android:orderInCategory="100"
+        android:title="SignOut"
+        android:icon="@drawable/signout"
+        android:showAsAction="always"
+        app:showAsAction="always" />
+
+
+
+</menu>

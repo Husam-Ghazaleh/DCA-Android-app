@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+
+
+    <ImageView
+        android:id="@+id/Logo_1_test"
+        android:layout_width= "350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Google_SignIN"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="GooglesignIn"
+        android:background="@drawable/icons8_google_48"
+        android:layout_below="@+id/Logo_1_test"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id ="@+id/TextView_Signin_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google Sign in"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/Google_SignIN"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Email_SignIn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/TextView_Signin_test"
+        android:background="@drawable/icons8_email_50"
+        android:onClick="EmailSignIn"/>
+
+    <TextView
+        android:id ="@+id/TextView_SignUp_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Sign In"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/Email_SignIn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_Activity_Type"
+        android:text="Activity_Type:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+    <CheckBox
+        android:id="@+id/CheckBox_Diet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diet"
+        android:layout_below="@+id/LabelView_Activity_Type"
+        android:onClick="checkBoxListener" />
+    <CheckBox
+        android:id="@+id/CheckBox_Exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise"
+        android:layout_below="@+id/LabelView_Activity_Type"
+        android:layout_toRightOf="@+id/CheckBox_Diet"
+        android:onClick="checkBoxListener" />
+    <CheckBox
+        android:id="@+id/CheckBox_BGL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BGL"
+        android:layout_below="@+id/LabelView_Activity_Type"
+        android:layout_toRightOf="@+id/CheckBox_Exercise"
+        android:onClick="checkBoxListener" />
+
+    <CheckBox
+        android:id="@+id/CheckBox_Medication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication"
+        android:layout_below="@+id/LabelView_Activity_Type"
+        android:layout_toRightOf="@+id/CheckBox_BGL"
+        android:onClick="checkBoxListener" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_ByTime"
+        android:text="By Time:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/CheckBox_Diet"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_From"
+        android:text="From:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/LabelView_ByTime"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <EditText
+        android:id="@+id/EditText_From"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_alignBaseline="@+id/LabelView_From"
+        android:layout_toRightOf="@+id/LabelView_From"
+        android:layout_marginLeft="40dp"
+        android:focusable="false"
+        android:onClick="showDay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_To"
+        android:text="To:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/EditText_From"
+        android:layout_toRightOf="@+id/EditText_From"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/EditText_To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_alignBaseline="@+id/LabelView_From"
+        android:layout_toRightOf="@+id/LabelView_To"
+        android:layout_marginLeft="40dp"
+        android:focusable="false"
+        android:onClick="showDay_to" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_ByKeyword"
+        android:text=" Or by Keyword: "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/LabelView_From"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_Keyword"
+        android:text="Keyword:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/LabelView_ByKeyword"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/EditText_Keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LabelView_Keyword"
+        android:layout_toRightOf="@+id/LabelView_Keyword"
+        android:layout_marginLeft="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_btn"
+        android:text="Search"
+        android:onClick="search"
+        android:layout_below="@+id/EditText_Keyword"
+        android:layout_toEndOf="@+id/CheckBox_Exercise"
+        android:layout_marginTop="2dp">
+
+    </Button>
+
+
+</RelativeLayout>

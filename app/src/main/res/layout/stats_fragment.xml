@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_Avg_Bgl"
+        android:text="Average_BGL:"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView_Avg_Bgl"
+        android:text="v1"
+        android:layout_toRightOf="@+id/LabelView_Avg_Bgl"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LabelView_Mean_Bgl"
+        android:text="Mean_BGL:"
+        android:layout_below="@+id/LabelView_Avg_Bgl"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextView_Mean_Bgl"
+        android:text="v2"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/LabelView_Mean_Bgl"
+        android:layout_toEndOf="@+id/LabelView_Avg_Bgl"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

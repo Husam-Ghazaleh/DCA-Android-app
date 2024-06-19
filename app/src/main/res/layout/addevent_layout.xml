@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="uwm.dca.AddEvent">
+
+  <fragment
+      class ="uwm.dca.AddactivitiesFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/add_act_bar"
+      tools:layout="@layout/addactivitesbar_fragment"/>
+
+    <fragment
+
+        class ="uwm.dca.BottomBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        android:id= "@+id/bot_bar_frag"
+        tools:layout="@layout/bottombar_fragment"
+
+        />
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_addactivities"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp" />
+
+  </RelativeLayout>
+
+</RelativeLayout>
+

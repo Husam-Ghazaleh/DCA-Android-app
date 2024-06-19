@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/logevent_width"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_red_light"
+    android:paddingBottom="5dp"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="56dp"
+    android:id="@+id/Bgl_Container">
+
+
+    <TextView
+        android:id="@+id/TextView_Bgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_bgl"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"/>
+
+
+
+    <SeekBar
+        android:id="@+id/SeekBar_Bgl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TextView_Bgl" />
+
+    <TextView
+        android:id="@+id/TextView_Bgl_Min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70"
+        android:layout_alignBottom="@+id/SeekBar_Bgl"
+        android:layout_toEndOf="@+id/TextView_Bgl" />
+
+    <TextView
+        android:id="@+id/TextView_Bgl_Max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="350"
+        android:layout_alignBottom="@+id/SeekBar_Bgl"
+        android:layout_alignEnd="@+id/SeekBar_Bgl" />
+
+
+    <TextView
+        android:id="@+id/TextView_BglTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView_Bgl"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/EditText_BglDayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/enter_day"
+        android:layout_alignBaseline="@+id/TextView_BglTime"
+        android:layout_toRightOf="@+id/TextView_BglTime"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/EditText_BglTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/enter_time"
+        android:layout_alignBaseline="@+id/EditText_BglDayTime"
+        android:layout_toRightOf="@+id/EditText_BglDayTime"
+        android:focusable="false"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

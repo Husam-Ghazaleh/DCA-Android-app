@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DCA</string>
+    <string name="action_settings">Settings</string>
+    <string name ="enter_diet">Diet: </string>
+    <string name ="description">description</string>
+    <string name ="textview_qty">Quantity: </string>
+    <string name ="enter_dietqty">Enter Quantity: </string>
+    <string name ="diet_time">Time</string>
+    <string name ="Enter_ammount">Enter Ammount:</string>
+    <string name = "ammount">ammount</string>
+    <string name ="time">Time:</string>
+    <string name="enter_day">Day</string>
+    <string name ="enter_time">Time</string>
+    <string name="enter_exercise">Exercise</string>
+    <string name="exercise_duration">Duration</string>
+    <string name="enter_exerciseduration">How long?</string>
+    <string name ="enter_medication">Medication:</string>
+    <string name ="enter_bgl">Enter BGL:</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+    <string name="hint_password">Password</string>
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hint_email">Email</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="loading">Loading…</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="google_status_fmt">Google User: %s</string>
+</resources>

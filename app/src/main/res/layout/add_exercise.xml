@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/logevent_width"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_bright"
+    android:paddingBottom="5dp"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_marginTop="56dp"
+    android:id="@+id/Exercise_Container">
+
+    <TextView
+        android:id="@+id/TextView_Exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_exercise"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp"/>
+    <AutoCompleteTextView
+        android:id="@+id/EditText_ExerciseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/description"
+        android:layout_alignBaseline="@+id/TextView_Exercise"
+        android:layout_toRightOf="@+id/TextView_Exercise"
+        android:inputType= "textAutoCorrect"/>
+    <TextView
+        android:id="@+id/TextView_ExerciseDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exercise_duration"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView_Exercise"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/EditText_ExerciseDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_exerciseduration"
+        android:layout_alignBaseline="@+id/TextView_ExerciseDuration"
+        android:layout_toRightOf="@+id/TextView_ExerciseDuration"
+        android:inputType= "numberDecimal"/>
+    <TextView
+        android:id="@+id/TextView_ExerciseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView_ExerciseDuration"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/EditText_ExerciseDayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/enter_day"
+        android:layout_alignBaseline="@+id/TextView_ExerciseTime"
+        android:layout_toRightOf="@+id/TextView_ExerciseTime"
+        android:layout_marginRight="10dp"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/EditText_ExerciseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/enter_time"
+        android:layout_alignBaseline="@+id/EditText_ExerciseDayTime"
+        android:layout_toRightOf="@+id/EditText_ExerciseDayTime"
+        android:focusable="false" />
+
+
+
+
+</RelativeLayout>
